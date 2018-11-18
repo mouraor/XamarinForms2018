@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App01_ConsultaCEP"
+             x:Class="App01_ConsultaCEP.MainPage">
+
+    <!-- O tipo de página ContentPage (de conteúdo) permite que somente haja um único elemento visual na sua estrutura, 
+         desta forma foi adicionado o elemento StackLayout, elemento que permite "empilhar" vários elementos de layout dentro da página 
+    -->
+    <!-- Propriedade "Padding" define uma distância entre o elemento "pai = StackLayout" com seus elementos filhos -->
+    <!-- Propriedade "Spacing" define uma distância entre cada um de seus elementos empilhados-->
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30" >
+        <!-- Cada elemento listado abaixo será empilhado, por conta do tipo do elemento visual escolhido (Stacklayout)
+        Cada tipo abaixo refere-se à uma determinada função-->
+
+        <!-- Apresenta uma imagem na tela-->
+        <!-- Propriedade "x:Name" define o nome do elemento visual para ser utiliado pelo código funcional C# -->
+        <Image Source =" logo.png" x:Name ="LOGO"/>                  
+
+        <!-- Apresenta entrada de dados pelo usuário-->
+        <!-- Propriedade "Placeolder" apresenta um texto no campo que some qdo usuário digitar em cima-->
+        <!-- Propriedade "PlaholderColor define a cor do texto-->
+        <!-- Propriedade "BackgroudColor define a cor de fundo do elemento-->
+        <Entry Placeholder="Digite o CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+
+        <!-- Apresenta um botão-->
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B" x:Name="BOTAO"/>          
+        
+        <!-- O elemento visual do tipo Label não permite qualquer interação com usuário, apenas visualização -->
+        <Label Text="" x:Name="RESULTADO"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,1 @@
+Mover toda solução para diretório raiz para compilação.
