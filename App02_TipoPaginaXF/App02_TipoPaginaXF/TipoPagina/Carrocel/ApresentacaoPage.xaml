@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:TipoPagina="clr-namespace:App02_TipoPaginaXF.TipoPagina.Carrocel"
+             x:Class="App02_TipoPaginaXF.TipoPagina.Carrocel.ApresentacaoPage">
+
+    <!--  OBSERVAÇÕES
+    
+    
+    ESTA PÁGINA EXISTE APENAS PARA DEMONSTRAR FORMAS DE APRESENTAR AS PÁGINAS DE CONTEÚDO CRIADAS
+    O PROJETO EXECUTA A PÁGINA "IntroducaoApp" .
+    
+    Uma das formas de definir a sequencia de apresentação das telas é listar cada 
+    uma das telas (abaixo) na sequencia desejada. Um modo um tanto quanto manual.
+    
+    Existem outras possibilidades disponibilizadas pela Xamarin que estão listadas na sequência
+    
+    <ContentPage> 
+        <Label Text="Pagina 1" />
+    </ContentPage>
+    <ContentPage>
+        <Label Text="Pagina 2" />
+    </ContentPage>
+    <ContentPage>
+        <Label Text="Pagina 3" />
+    </ContentPage>
+   
+    -->
+    
+    <!-- 
+    Criado o namaspece acima (xmlns:TipoPagina), desta forma possibilita "puxar" todo conteudo das páginas
+    pertencentes ao namespace definido (neste caso do próprio projeto que reconhece a existencia de várias páginas)
+    e executar a navegação entre as páginas listadas.
+    -->
+    <TipoPagina:TipoPagina1/>
+    <TipoPagina:TipoPagina2/>
+    <TipoPagina:TipoPagina3/>
+
+</CarouselPage>

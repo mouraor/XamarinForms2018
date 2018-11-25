@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TipoPaginaXF.TipoPagina.Carrocel.TipoPagina1"
+             BackgroundColor="LightSkyBlue">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+            
+            <Label Text="ContentPage 1" TextColor="blue"
+                HorizontalOptions="CenterAndExpand" />
+            
+            <Image Source=" XF_Logo.png" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

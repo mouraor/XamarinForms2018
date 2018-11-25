@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TipoPaginaXF.TipoPagina.Tabbed.Abas"
+             xmlns:nav="clr-namespace:App02_TipoPaginaXF.TipoPagina.Navigation"
+            >
+    <!-- Para fazer a chamada de uma página, foi criado o namespace acima de Navigation -->
+
+    <!-- A Pagina 1 existem ícones de opções que, para serem apresentados, as abas devem pertencer à uma página tipo Navigation-->
+    <!-- Existem 2 formas de fazer esta apresnetação: Xamarin (apresentada abaixo) e via codificação (ver Abas.cs)-->
+    <NavigationPage Title="Título da Aba (ITEM 1)" Icon="XF_Logo.png">
+        <x:Arguments>    <!-- X:Arguments é uma forma de passar algum item ao contrutor da classe xaml -->
+            <nav:Pagina1 />
+        </x:Arguments>
+    </NavigationPage>
+
+    <nav:Pagina2 />
+
+</TabbedPage>

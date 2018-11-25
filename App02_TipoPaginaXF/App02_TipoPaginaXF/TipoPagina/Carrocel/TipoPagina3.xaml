@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TipoPaginaXF.TipoPagina.Carrocel.TipoPagina3"
+             BackgroundColor="LightSkyBlue">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+            
+            <Label Text="ContentPage 3 - Botao Vai para NavigationPage" TextColor="blue"
+                HorizontalOptions="CenterAndExpand" />
+            
+            <!-- a propriedade Clicked do button captura o evento de clique e chama o metodo da classe 
+                 no arquivo cs (Code behind) desta página-->
+            <Button Image="play.png" BackgroundColor="Transparent" Clicked="MudarPagina"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App02_TipoPaginaXF.TipoPagina.Navigation.Pagina1"
+             Title="Título de sua NavigationPage 1 AQUI!">
+
+    <!-- O Xamarin permite que seja adicionar uma menu de opções no formulário e para cada item também
+         é possível definir icones, cores e demais propriedades-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Tipo" Icon="XF_logo.png" Clicked="MostraJanelaAviso"/>
+        <ToolbarItem Text="Pesquisa" Icon="PesquisaIcon.png" />
+        <ToolbarItem Text="Enviar" Icon="Submitecon.png" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Eu sou uma ContentPage (metodo NavigationPage)"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Botão-Ir ContentPage 2 (via NavigationPage)" Clicked="MudarParaPagina2"/>
+
+            <Button Text="Botão-Chamar Modal" Clicked="ChamarModal"/>
+
+            <Button Text="Botão-Chamar Master" Clicked="ChamarMaster"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
